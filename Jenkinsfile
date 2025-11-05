@@ -56,7 +56,7 @@ pipeline {
                         blackducksca.url="https://blackduck.saas-qa.beescloud.com/" \
                         blackducksca.scan.full=true \
                         blackducksca.token="${BD_TOKEN}" \
-                        blackducksca.detect.options="--detect.accuracy.required=LOW" \
+                        blackducksca.detect.arguments="--detect.accuracy.required=LOW" \
                         blackducksca_reports_sarif_create=true \
                         blackducksca_reports_sarif_file_path="output/blackduck-sarif-report.sarif" \
                         blackducksca_reports_sarif_groupSCAIssues=false
